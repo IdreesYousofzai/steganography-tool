@@ -14,6 +14,7 @@ import numpy as np
 from stego_core import encode_image, decode_image, max_capacity_bytes, StegoError
 
 OUT_DIR = "test_output"
+
 os.makedirs(OUT_DIR, exist_ok=True)
 
 
