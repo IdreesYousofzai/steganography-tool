@@ -67,6 +67,7 @@ def cmd_decode(args):
 
 def cmd_capacity(args):
     try:
+        
         image = Image.open(args.input)
     except FileNotFoundError as e:
         print(f"[ERROR] {e}", file=sys.stderr)
