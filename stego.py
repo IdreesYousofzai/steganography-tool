@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 stego.py -- CLI steganography tool (LSB encoding + optional XOR password)
 
