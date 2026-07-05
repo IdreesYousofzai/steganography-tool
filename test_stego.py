@@ -23,6 +23,7 @@ def make_test_image(path, size=(300, 200), seed=0):
     rng = np.random.default_rng(seed)
     # Smooth gradient + noise so it looks like a "real" photo-ish image
     x = np.linspace(0, 255, size[0])
+    
     y = np.linspace(0, 255, size[1])
     xv, yv = np.meshgrid(x, y)
     r = xv.astype(np.uint8)
