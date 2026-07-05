@@ -29,6 +29,7 @@ def cmd_encode(args):
         message = input("Enter the secret message to hide: ")
 
     password = args.password
+    
     if args.ask_password and not password:
         password = getpass.getpass("Password (used to XOR-protect the message): ")
 
