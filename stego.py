@@ -104,6 +104,7 @@ def build_parser():
 
     p_cap = sub.add_parser("capacity", help="Show how many bytes an image can hide")
     p_cap.add_argument("-i", "--input", required=True, help="Path to the image")
+    
     p_cap.set_defaults(func=cmd_capacity)
 
     return parser
