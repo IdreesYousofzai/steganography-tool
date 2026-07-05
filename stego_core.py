@@ -47,6 +47,7 @@ def xor_bytes(data: bytes, password: str) -> bytes:
 # --------------------------------------------------------------------------
 # Bit <-> byte helpers
 # --------------------------------------------------------------------------
+
 def _bytes_to_bits(data: bytes):
     for byte in data:
         for shift in range(7, -1, -1):
