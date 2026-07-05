@@ -72,6 +72,7 @@ def _int_to_bits(value: int, n_bits: int):
 # --------------------------------------------------------------------------
 # Capacity
 # --------------------------------------------------------------------------
+
 def max_capacity_bytes(image: Image.Image) -> int:
     """How many message bytes can fit in this image (1 bit per colour channel)."""
     width, height = image.size
