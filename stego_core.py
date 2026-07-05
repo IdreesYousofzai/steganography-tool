@@ -35,6 +35,7 @@ class StegoError(Exception):
 # on top of the steganography layer. For real confidentiality, the
 # message should be encrypted with a proper cipher (e.g. AES-GCM via
 # the `cryptography` library) *before* being handed to this tool.
+
 def xor_bytes(data: bytes, password: str) -> bytes:
     """XOR `data` against a repeating key derived from `password`."""
     if not password:
