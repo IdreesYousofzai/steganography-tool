@@ -42,7 +42,6 @@ def max_channel_diff(path_a, path_b):
     b = np.array(Image.open(path_b).convert("RGB"), dtype=np.int16)
     return int(np.max(np.abs(a - b)))
 
-
 def run_case(name, image_path, message, password=None):
     encoded_path = os.path.join(OUT_DIR, f"{name}_encoded.png")
     print(f"\n--- Case: {name} ---")
