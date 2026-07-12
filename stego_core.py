@@ -42,7 +42,6 @@ def xor_bytes(data: bytes, password: str) -> bytes:
     key = password.encode("utf-8")
     return bytes(b ^ key[i % len(key)] for i, b in enumerate(data))
 
-
 # --------------------------------------------------------------------------
 # Bit <-> byte helpers
 # --------------------------------------------------------------------------
