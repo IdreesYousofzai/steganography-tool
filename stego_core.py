@@ -18,7 +18,6 @@ read back out, so we don't need any special end-of-message marker.
 
 from PIL import Image
 
-
 class StegoError(Exception):
     """Raised for any steganography-specific failure (capacity, format, etc.)."""
     pass
