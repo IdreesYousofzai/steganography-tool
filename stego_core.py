@@ -63,6 +63,7 @@ def _bits_to_bytes(bits) -> bytes:
     return bytes(out)
 
 
+
 def _int_to_bits(value: int, n_bits: int):
     return [(value >> shift) & 1 for shift in range(n_bits - 1, -1, -1)]
 
