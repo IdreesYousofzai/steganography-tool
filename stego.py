@@ -19,7 +19,6 @@ import sys
 from stego_core import encode_image, decode_image, max_capacity_bytes, StegoError
 from PIL import Image
 
-
 def cmd_encode(args):
     message = args.message
     if args.file:
